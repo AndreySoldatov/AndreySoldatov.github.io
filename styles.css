@@ -1,0 +1,102 @@
+body {
+    font-family: 'Ubuntu';
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: calc(30px + 3vw);
+    font-weight: 700;
+    line-height: calc(30px + 3vw);
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s;
+    fill: rgb(148, 148, 148);
+}
+
+svg:hover {
+    fill: rgb(255, 49, 49);
+}
+
+a {
+    margin-right: 20px;
+    font-size: 0;
+}
+
+#title {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.sticky {
+    position: sticky;
+}
+
+#content {
+    display: grid;
+    min-width: 53%;
+}
+
+.element {
+    transition: all 0.5s;
+    height: 60vh;
+    width: 53%;
+    overflow: hidden;
+}
+
+.element:hover {
+    width: 80vw;
+    height: 90vh;
+}
+
+.image {
+    transition: all 0.5s;
+    filter: brightness(50%);
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image:hover {
+    filter: brightness(100%);
+    height: 90vh;
+}
+
+.itemText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    color: white;
+
+    text-shadow: rgba(0, 0, 0, 0.603) 0 0 20px;
+}
+
+.itemName {
+    font-weight: 500;
+}
+
+.itemDesc {
+    font-size: 18px;
+}
+
+.element {
+    position: relative;
+}
