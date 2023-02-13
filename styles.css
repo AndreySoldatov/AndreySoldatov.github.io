@@ -91,13 +91,13 @@ a {
     position: absolute;
     top: 1vw;
     display: grid;
-    width: 100%;
+    width: 52vw;
 }
 
 .element {
     transition: all 0.5s;
     height: 60vh;
-    width: 52%;
+    width: 52vw;
     overflow: hidden;
 
     border-radius: 2vw;
