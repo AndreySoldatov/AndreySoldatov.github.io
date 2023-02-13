@@ -1,16 +1,52 @@
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@200..700);
-
 body {
-    font-family: 'Ubuntu';
+    font-family: 'Martian Mono';
     margin: 0;
     overflow-x: hidden;
+
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    
+    scrollbar-color: rgb(255, 75, 75) rgb(228, 228, 228);
+    scrollbar-width: thin;
 }
 
 h1 {
     font-size: calc(30px + 3vw);
-    font-weight: 700;
+    font-weight: bold;
     line-height: calc(30px + 3vw);
     margin: 0;
+}
+
+.grad {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+
+    padding-bottom: 1.1vh;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+@keyframes slidein {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 p {
@@ -37,7 +73,7 @@ a {
     margin: 0;
     position: fixed;
     top: 50%;
-    left: 55%;
+    left: 56%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     user-select: none;
@@ -52,15 +88,26 @@ a {
 }
 
 #content {
+    position: absolute;
+    top: 1vw;
     display: grid;
-    min-width: 53%;
+    width: 100%;
 }
 
 .element {
     transition: all 0.5s;
     height: 60vh;
-    width: 53%;
+    width: 52%;
     overflow: hidden;
+
+    border-radius: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+
+    filter: drop-shadow(0 0 2vw rgba(0, 0, 0, 0.212));
+
+    scroll-snap-align: center;
 }
 
 .element:hover {
@@ -70,7 +117,7 @@ a {
 
 .image {
     transition: all 0.5s;
-    filter: brightness(50%);
+    filter: brightness(70%);
     height: 60vh;
     width: 100%;
     object-fit: cover;
@@ -84,7 +131,7 @@ a {
 .itemText {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     margin: 30px;
     color: white;
 
@@ -120,7 +167,7 @@ a {
 
 .anywayButton {
     transition: all 0.2s;
-    font-family: Ubuntu;
+    font-family: "Noto Sans";
     margin: 20px;
     padding: 5px;
     font-size: 18px;
