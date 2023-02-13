@@ -55,11 +55,11 @@ function start() {
         back.className = "errorBack";
 
         let message = document.createElement("div");
-        message.appendChild(document.createTextNode("View this page on desktop for better experience"));
+        message.appendChild(document.createTextNode("View this page on desktop for better experience\n(or just rotate your device)"));
         message.className = "errorText";
 
         let anywayButton = document.createElement("button");
-        anywayButton.appendChild(document.createTextNode("View Page Anyway"));
+        anywayButton.appendChild(document.createTextNode("View Page"));
         anywayButton.className = "anywayButton";
         anywayButton.onclick = remove_error;
 
