@@ -13,6 +13,7 @@ function start() {
 
         if (e.link) {
             var link = document.createElement("a");
+            link.className = "itemImageLink";
             link.href = e.link;
             link.target = "_blank";
             link.appendChild(img);

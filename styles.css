@@ -116,16 +116,25 @@ a {
 }
 
 .image {
+    height: inherit;
     transition: all 0.5s;
-    filter: brightness(70%);
-    height: 60vh;
+    filter: brightness(80%);
+    /* height: 60vh; */
     width: 100%;
     object-fit: cover;
 }
 
 .image:hover {
     filter: brightness(100%);
-    height: 90vh;
+    /* height: 90vh; */
+}
+
+.itemImage {
+    height: inherit;
+}
+
+.itemImageLink {
+    height: inherit;
 }
 
 .itemText {
